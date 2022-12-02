@@ -13,7 +13,7 @@ class Task01(unittest.TestCase):
         self.assertEqual(solution.Solution().secondPart("./tasks/01/example.txt"), 45000)
         
     def test_secondPartSolution(self):
-        self.assertEqual(solution.Solution().secondPart("./tasks/01/input.txt"), 45000)
+        self.assertEqual(solution.Solution().secondPart("./tasks/01/input.txt"), 205615)
 
 if __name__ == '__main__':
     unittest.main()

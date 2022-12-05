@@ -4,6 +4,9 @@ This repository is my solution for [Advent of Code 2022](https://adventofcode.co
 ## Supported Python version
 This project is developed and tested on Python v3.11.0
 
+### Pyenv
+I recommend to use `pyenv` for handling correct Python version on your system.
+
 ## How to run?
 `python ./tasks/00/test.py`
 

@@ -21,12 +21,10 @@ class Solution:
         for pair in pairs:
             first = pair[0]
             second = pair[1]
-            if first[0] > second[0]:
-                [first, second] = [second, first]
-            elif first[0] == second[0] and first[1] < second[1]:
-                [first, second] = [second, first]
-                
-            if first[0] <= second[0] and first[1] >= second[1]:
+            first_set = set(range(first[0], first[1] + 1))
+            second_set = set(range(second[0], second[1] + 1))
+            
+            if len(first_set.intersection(second_set)) == min([len(first_set), len(second_set)]):
                 fully_overlaps += 1
                 
         return fully_overlaps

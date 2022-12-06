@@ -7,7 +7,7 @@ class Solution:
         return lines
     
     def first_part(self, filePath):
-        return 1
+        pass
     
     def second_part(self, filePath):
-        return 2
+        pass

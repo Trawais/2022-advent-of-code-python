@@ -1,5 +1,3 @@
-from collections import Counter
-
 class Solution:
     
     @staticmethod
@@ -16,6 +14,4 @@ class Solution:
             temp = input[starting_index:ending_index]
             if len(set(temp)) == window_length: # convertin substring to the Set will eliminate the duplicated chars
                 return i+1
-        else:
-            return -1
     

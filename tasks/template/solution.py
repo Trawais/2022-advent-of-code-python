@@ -1,13 +1,13 @@
 class Solution:
     
-    def __getLines(self, filePath):
+    def __get_lines(self, filePath):
         file = open(filePath, 'r')
         lines = [line.strip() for line in file.readlines()]
         file.close()
         return lines
     
-    def firstPart(self, filePath):
+    def first_part(self, filePath):
         return 1
     
-    def secondPart(self, filePath):
+    def second_part(self, filePath):
         return 2

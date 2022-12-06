@@ -7,11 +7,14 @@ class Solution:
         file.close()
         return lines[0]
     
-    def both_parts(self, input, window_length):
-        for i in range(window_length - 1, len(input)):
-            starting_index = i - window_length + 1
-            ending_index = i + 1
-            temp = input[starting_index:ending_index]
-            if len(set(temp)) == window_length: # convertin substring to the Set will eliminate the duplicated chars
-                return i+1
+    # this method has been refactored by openAI chatbot
+    # Here are his comments
+    # * I added type hints to the method signature of the both_parts method to make it more readable.
+    # * I simplified the loop to iterate over the string using a sliding window of size window_length, and I removed the unnecessary index calculations.
+    # * I added a check to ensure that the substring contains all unique characters before returning the ending index of the window.
+    def both_parts(self, input: str, window_length: int) -> int:
+        for i in range(len(input) - window_length + 1):
+            temp = input[i:i+window_length]
+            if len(set(temp)) == window_length:
+                return i + window_length
     

@@ -15,22 +15,18 @@ class Solution:
             'Z': 3  # Scissors
         }
         
-        opponent_move_mapping = {
-            'A': 1, # Rock
-            'B': 2, # Paper
-            'C': 3  # Scissors
-        }
+        # Opponents move - A: Rock, B: Paper, C Scissors
         
         score_map = {
-            1: { 1: 3, 2: 0, 3: 6 }, # Rock
-            2: { 1: 6, 2: 3, 3: 0 }, # Paper
-            3: { 1: 0, 2: 6, 3: 3 }  # Scissors
+            1: { 'A': 3, 'B': 0, 'C': 6 }, # Rock
+            2: { 'A': 6, 'B': 3, 'C': 0 }, # Paper
+            3: { 'A': 0, 'B': 6, 'C': 3 }  # Scissors
         }
         
         score = 0
         
         for line in lines:
-            opponent_move = opponent_move_mapping[line[0]]
+            opponent_move = line[0]
             your_move = your_move_mapping[line[1]]
         
             score += your_move
@@ -40,12 +36,6 @@ class Solution:
     
     def secondPart(self, filePath):
         lines = self.__readLines(filePath)
-        
-        your_move_mapping = {
-            'X': 1, # Rock
-            'Y': 2, # Paper
-            'Z': 3, # Scissors
-        }
         
         opponent_move_mapping = {
             'A': 1, # Rock

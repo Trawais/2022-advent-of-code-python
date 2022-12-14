@@ -8,7 +8,7 @@ This project is developed and tested on Python v3.11.0
 I recommend to use `pyenv` for handling correct Python version on your system.
 
 ## How to run?
-`python ./tasks/00/test.py`
+`python ./tasks/99/test.py`
 
 ## How to prepare folder for the task?
 You can use prepared command from Makefile:
